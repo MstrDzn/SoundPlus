@@ -1,0 +1,251 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8FAFF;
+    scroll-behavior: smooth;
+}
+
+.lang_container {
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    height: auto;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+
+/*------------------LANG------------------*/
+button[type=submit][value=fr] {
+    border: 0;
+    background-color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+button[type=submit][value=en] {
+    border: 0;
+    background-color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/*------------------MAIN------------------*/
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+
+/*------------------MAIN_CALLTOACTION------------------*/
+
+p {
+    font-weight: 500;
+}
+
+main .search_containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: 50vh;
+    color: black;
+    gap: 2  0px;
+}
+
+main .search_containers h1 {
+    font-size: xx-large;
+}
+
+
+
+main .search_containers form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+main .events_grid_containers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    gap: 50px;
+}
+
+main .events_grid_containers .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    width: 20%;
+    background-color: white;
+    color:black;
+    border: 1px solid #E1E4ED;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    position: relative;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+main .live_container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    height: 10px;
+    text-align: right;
+}
+.point {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+.point::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    animation: pulsate 1s infinite;
+}
+
+@keyframes pulsate {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 0.4;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.8;
+    }
+  }
+
+main .header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main .header_container a {
+    color: black;
+    text-decoration: none;
+}
+
+main .vote_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+main .vote_container a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 50% ;
+    background-color: #ff0062;
+    color:white;
+    font-weight: bold;
+    transition: background-color 1s;
+}
+main .vote_container a:hover{
+
+    background-color: #cf004f;
+    transition: background-color 1s;
+
+}
+
+main .action_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+main .action_container a {
+    color:rgb(255, 0, 98);
+}
+
+main .tag_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+}
+
+main .card .tag_container a {
+    text-decoration: none;
+    padding: 6px 10px ;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 25%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border: 1px solid #E1E4ED;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: #9D9D9D;
+    border-radius: 8px 0px 0px 8px;
+}
+
+main button[type="submit"]{
+    width: auto;
+    padding: 15px 20px;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: black;
+    transition: background-color 0.5s;
+    border-radius: 0px 8px 8px 0px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}

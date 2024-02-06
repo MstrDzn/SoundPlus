@@ -1,0 +1,141 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 10%;
+    text-align: center;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 80%;
+}
+
+footer .footer_action_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 24px;
+
+
+}
+
+footer .footer_action_container h1{
+    font-size: 1.8em;
+    font-weight: 700;
+
+}
+
+footer .footer_action_container a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+
+footer nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    gap: 10%;
+    text-align: center;
+}
+
+footer nav .social_media {
+    display: flex;
+    flex-direction: row;
+    width: auto ;
+    gap: 16px;
+}
+
+footer nav .social_media a{
+    text-decoration: none;
+    padding: 8px 8px;
+    background-color: black;
+    color: transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+footer nav .social_media i{
+
+    color: white;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 5px;
+    background-color: transparent;
+}
+
+
+
+footer nav li {
+    list-style: none;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid transparent;
+    transition: border 1s;
+    font-weight: bold;
+}
+
+footer nav li a:hover {
+    border-bottom: 2px solid black;
+}
+
+
+footer .footer_copyright {
+    height: 60px;
+    width: 95%;
+    border-top: 1px solid black;
+    padding: 25px;
+    padding-bottom: 0;
+    margin-top: 24px;
+}
+
+footer .footer_copyright p{
+    color: rgba(0, 0, 0, 0.521);
+}
+
+
+footer .footer_copyright a{
+    color: black;
+}

@@ -1,0 +1,227 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+  
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8FAFF;
+    overflow-y: hidden;
+}
+
+.lang_container {
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    height: auto;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    margin-left: 45vh;
+    padding: 24px 48px;
+}
+
+main ul {
+    display: flex;
+    align-items: center; /* Ajustement de align-items à flex-start */
+    flex-direction: row; /* Modification pour afficher en colonne */
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #6970774e;
+    gap: 24px;
+}
+
+main li {
+    list-style: none;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-left: 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+main a:hover {
+    border-bottom: 2px solid black;
+}
+
+
+main .active {
+    border-bottom: 2px solid black;
+}
+
+
+.title_page {
+    font-size: 2em;
+}
+
+
+main .overview_containers {
+    height: 80%;
+    margin-bottom: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+main .stats_containers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+main .stats_containers .stats_card {
+    width: 22.5%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #E1E4ED;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+main .stats_containers .stats_card h4 {
+    color: rgba(0, 0, 0, 0.521);
+    font-weight: 500;
+}
+
+main .stats_containers .stats_card .badge_containers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+main .stats_containers .stats_card .title {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+main .stats_containers .stats_card div .badge {
+    background-color: #F2F4F8;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    border-radius: 12em;
+    margin: auto 0;
+
+}
+
+
+main .stats_containers .stats_card div .badge p {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+main .dashboard_containers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+
+main .dashboard_containers .dashboard_card {
+    width: 22.5%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #E1E4ED;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+
+main .dashboard_containers .dashboard_card_long {   
+    width: 50%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #E1E4ED;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+
+
+
+main .tasks_containers {
+    display: none;
+    height: 80%;
+    margin-bottom: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main .documents_containers {
+    display: none;
+    height: 80%;
+    margin-bottom: 24px;
+    margin: 0;
+    padding: 0;    
+}
+
+main .music_containers{
+    display: none;
+    height: 80%;
+    margin-bottom: 24px;
+    margin: 0;
+    padding: 0;    
+}
+
+
+
+main .music_sub_containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+
+main .music_containers .music_sub_containers .music_card_long {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75vh;
+    background-color: white;
+    border: 1px solid #E1E4ED;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    gap: 10px;
+}
